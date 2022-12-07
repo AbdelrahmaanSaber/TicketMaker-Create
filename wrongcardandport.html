@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Wrong Card And Port </title>
+<link rel="stylesheet" href="stylesheet.css">
+  
+    <script>
+    
+    
+          function addtext(form) {
+           form.ticket.value = "Customer Name: "+  form.cstname.value+" ,"+ "\n";
+           form.ticket.value += "First and Second mobile number: "+  form.firstandsecondmob.value+ " ,"+"\n";
+           form.ticket.value += "Voice status: "+ form.voicestatusval.value + " ,"+"\n";
+           form.ticket.value += "Wrong card and port type: "+ form.wrongval.value +" ,"+ "\n";
+           form.ticket.value += "ADSL number validated : "+ form.ADSLnum.value + " ,"+"\n";
+           form.ticket.value += "TE bills :  "+ form.tebill.value+ " ,"+"\n";
+           form.ticket.value += "Customer CPE checked in CSO : Yes "+" ,"+ "\n";
+           form.ticket.value += "Customer connection from the main : Yes "+ " ,"+"\n";
+           form.ticket.value += "Customer check with and without Splitter : Yes "+" ,"+ "\n";
+           
+          }
+
+    </script> 
+    
+    
+</head>
+
+<body >
+
+
+ <!-- The sidebar -->
+<div class="sidebar">
+ 
+	              <a  href="index.html">TICKET MAKER !</a>
+                  <a  href="Datadown.html" target="_blank" >Voice and Data Down</a>
+                  <a href="BadLine.html" target="_blank" >Bad line quality</a>
+                  <a href="Physicalinstability.html" target="_blank" >Physical Insability</a>
+                  <a class="active" href="wrongcardandport.html" target="_blank" >Wrong card and port</a>
+                  <a href="Voiceoverlapping.html" target="_blank" >Voice over lapping</a>
+                  <a href="Crossconnection.html" target="_blank" >Cross connection</a>
+      
+                  
+                  <a href="UnabletoobtainIP.html" >Unable to obtain IP</a>
+                  <a href="Logicalinstability.html">Logical instability</a>
+                  <a href="#">Browsing</a>
+                  <a href="#">Slowness</a>
+                  <a href="ticketupd.pdf" target="_blank" >PDF Revision !</a>
+
+</div>
+
+<!-- Page content -->
+<div class="content">
+
+
+    <h1> Wrong card and nas port</h1>
+
+    <form>
+
+    <label for="cstname">Customer Name:</label>
+    <input type="text" onfocus="this.value=''"  name="cstname" value="">
+
+
+    <br>
+    <br>
+
+
+    <label for="firstandsecondmob"> First and Second mobile number:    </label>
+    <input type="text" onfocus="this.value=''"  name="firstandsecondmob" value="">
+    <br>
+    <br>
+
+   
+    <label for="voice">Voice status:</label>
+    <input type="text" onfocus="this.value=''"  name="voicestatusval" value=""> * ringing – busy tone – no dial tone -temporary out of service.*    
+
+
+    <br>
+    <br>
+
+    
+    <label for="wrong">Wrong card & port type:</label>
+    <input type="text"  onfocus="this.value=''"  name="wrongval" value=""> *Matrix = Request => Wrong Card Port &nbsp;&nbsp;&nbsp;&nbsp;   Matrix = LDAP => Wrong Nas Port *<!-- to res : onfocus="this.value=''" -->
+    
+
+    
+    <br>
+    <br>
+
+    <label for="ADSLnum"> ADSL number validated :    </label>
+    <input type="text" onfocus="this.value=''"  name="ADSLnum" value="">
+    <br>
+    <br>
+    <label  for="tebill"> Te Bill   : </label>
+    <input type="text" onfocus="this.value='' " name="tebill" value="">    * Paid - In grace period * 
+    <br>
+    <br>
+    
+
+    <button type="button" class="generat" onclick="addtext(this.form)">Generate Ticket</button>
+    <a href="https://bss.te.eg:12900/csp/sr/business.action?BMEBusiness=srNewSrPage&srTypeName=Wrong%20card%20and%20port&srTypeId=074001001020005&t=1657204548549&tabId=sr0.28315453441393856&topUrl=&custid=&subsNumber=&BMEWebToken="  target="_blank" ><button type="button" class="fillin">Fill In BSS</button></a>
+
+    <br>
+    <br>
+
+
+    <textarea name="ticket"  style=" height: 185px; width: 550px;" onclick="this.focus();this.select();document.execCommand('copy')">
+      
+
+
+    </textarea>
+        
+</form>
+
+
+
+</div>
+
+
+</body>
+</html>

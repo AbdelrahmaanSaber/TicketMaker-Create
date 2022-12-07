@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Unable to obtain IP</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  
+    <script>
+    
+    
+          function addtext(form) {
+
+           form.ticket.value ="Customer Name : "+ form.cstname.value + "\n";
+           form.ticket.value +="First and Second mobile number: "+  form.firstandsecondmob.value+ "\n";
+
+           form.ticket.value +=" Line is up"+ "\n";
+           form.ticket.value +="Assia clear (no retrains or flags): Yes "+ "\n";
+           form.ticket.value +="Customer received configured Test CPE : Yes "+ "\n";
+           form.ticket.value +="Customer’s CPE Working fine on CSO : Yes "+ "\n";
+           form.ticket.value +="Customer’s CPE checked and configured on CSO : Yes "+ "\n";
+           
+          }
+
+    </script> 
+    
+    
+</head>
+
+<body >
+
+
+     <!-- The sidebar -->
+<div class="sidebar">
+ 
+    <a href="index.html">TICKET MAKER !</a>
+    <a  href="Datadown.html" target="_blank" >Voice and Data Down</a>
+    <a href="BadLine.html" target="_blank" >Bad line quality</a>
+    <a  href="Physicalinstability.html" target="_blank" >Physical Insability</a>
+    <a href="wrongcardandport.html" target="_blank" >Wrong card and port</a>
+    <a href="Voiceoverlapping.html" target="_blank" >Voice over lapping</a>
+    <a  href="Crossconnection.html" target="_blank" >Cross connection</a>
+
+    
+    <a class="active" href="UnabletoobtainIP.html" >Unable to obtain IP</a>
+    <a href="Logicalinstability.html">Logical instability</a>
+    <a href="#">Browsing</a>
+    <a href="#">Slowness</a>
+    <a href="ticketupd.pdf" target="_blank" >PDF Revision !</a>
+
+</div>
+
+
+<!-- Page content -->
+<div class="content">
+
+    <h1>Unable to obtain IP</h1>
+
+    <form>
+
+        
+    <label for="cstname">Customer Name:</label>
+    <input type="text" onfocus="this.value=''"  name="cstname" value="">
+    
+    <br>
+    <br>
+
+    <label for="firstandsecondmob"> First and Second mobile number:    </label>
+    <input type="text" onfocus="this.value=''"  name="firstandsecondmob" value="">
+
+
+    <br>
+    <br>
+
+    <button type="button" class="generat" onclick="addtext(this.form)">Generate Ticket</button>
+    <a href="https://bss.te.eg:12900/csp/sr/business.action?BMEBusiness=srNewSrPage&srTypeName=Unable%20to%20obtain%20IP&srTypeId=074001001020009&t=1657196836203&tabId=sr0.013261661092447086&topUrl=&custid=&subsNumber=&BMEWebToken=null" target="_blank"><button type="button" class="fillin">Fill In BSS</button></a>
+
+    <br>
+    <br>
+
+
+    <textarea name="ticket"  style=" height: 250px; width: 550px;"  onclick="this.focus();this.select();document.execCommand('copy')">
+      
+
+
+    </textarea>
+        
+</form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&display=swap');
+*{
+  
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+}
+
+h1{
+  margin-bottom: 18px; 
+}
+
+/* The side nav menu */
+.sidebar {
+    
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* when active current link */
+  .sidebar a.active {
+    background-color: #3d9ab6;
+    color: white;
+    font-weight: 400;
+  }
+  
+  /* when set pointer mouse-over link */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Page content */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 750px;
+  
+  }
+  
+  .generat{
+
+    background-color: #224b80;
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+  }
+
+  .fillin {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 85px;
+  }
